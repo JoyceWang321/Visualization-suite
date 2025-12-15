@@ -10,7 +10,7 @@ class AlgorithmVisualizationSuite:
     def __init__(self, root):
         self.root = root
         self.root.title("算法可视化套件 - 小组项目")
-        self.root.geometry("900x700")
+        self.root.geometry("950x850")
         self.root.configure(bg='#2c3e50')  # 修改背景色为深蓝色
         
         # 设置主题样式
@@ -105,16 +105,16 @@ class AlgorithmVisualizationSuite:
         algo_frame.pack(fill=tk.BOTH, expand=True, padx=20, pady=20)
         
         # 创建三个算法模块的卡片
-        self.create_algorithm_card(algo_frame, "🔍 BFS算法可视化", 
+        self.create_algorithm_card(algo_frame, "🔍BFS算法可视化", 
                                  "广度优先搜索算法\n\n实现者：房盈杉\n班级：生信C2302", 
                                  self.open_bfs, 0, '#3498db')  # 蓝色
         
-        self.create_algorithm_card(algo_frame, "🌳 DFS算法可视化", 
+        self.create_algorithm_card(algo_frame, "🔍DFS算法可视化", 
                                  "深度优先搜索算法\n\n实现者：罗建然\n班级：生信C2302", 
                                  self.open_dfs, 1, '#2ecc71')  # 绿色
         
-        self.create_algorithm_card(algo_frame, "📊 排序算法可视化", 
-                                 "三种比较排序算法\n\n实现者：蓝冰云\n优化：全体\n班级：生信C2301", 
+        self.create_algorithm_card(algo_frame, "🔍排序算法可视化", 
+                                 "五种比较排序算法\n实现者：蓝冰云\n优化：全体\n班级：生信C2301", 
                                  self.open_sorting, 2, '#e74c3c')  # 红色
         
         # 状态栏（深色背景）
