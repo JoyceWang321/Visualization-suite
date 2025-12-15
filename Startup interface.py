@@ -3,7 +3,7 @@ import tkinter as tk
 from tkinter import ttk, messagebox
 import BFS1
 import DFS
-import Sorting
+import Sorting_pro
 
 class AlgorithmVisualizationSuite:
     def __init__(self, root):
@@ -211,7 +211,7 @@ class AlgorithmVisualizationSuite:
         self.status_var.set("🔵 正在启动BFS算法可视化模块...")
         self.root.withdraw()
         bfs_window = tk.Toplevel(self.root)
-        bfs_window.title("BFS算法可视化 - 房盈杉")
+        bfs_window.title("BFS算法可视化")
         bfs_window.geometry("1000x700")
         BFS1.BFSVisualizer(bfs_window)
         bfs_window.protocol("WM_DELETE_WINDOW", lambda: self.on_subwindow_close(bfs_window))
@@ -220,7 +220,7 @@ class AlgorithmVisualizationSuite:
         self.status_var.set("🟢 正在启动DFS算法可视化模块...")
         self.root.withdraw()
         dfs_window = tk.Toplevel(self.root)
-        dfs_window.title("DFS算法可视化 - 罗建然")
+        dfs_window.title("DFS算法可视化")
         dfs_window.geometry("1000x700")
         DFS.DFSVisualizer(dfs_window)
         dfs_window.protocol("WM_DELETE_WINDOW", lambda: self.on_subwindow_close(dfs_window))
@@ -229,9 +229,9 @@ class AlgorithmVisualizationSuite:
         self.status_var.set("🔴 正在启动排序算法可视化模块...")
         self.root.withdraw()
         sorting_window = tk.Toplevel(self.root)
-        sorting_window.title("排序算法可视化 - 蓝冰云")
+        sorting_window.title("排序算法可视化")
         sorting_window.geometry("1000x700")
-        Sorting.SortingVisualizer(sorting_window)
+        Sorting_pro.SortingVisualizer(sorting_window)
         sorting_window.protocol("WM_DELETE_WINDOW", lambda: self.on_subwindow_close(sorting_window))
     
     def on_subwindow_close(self, window):
