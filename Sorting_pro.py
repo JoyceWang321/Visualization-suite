@@ -12,7 +12,7 @@ COLOR_BAR_SORTED = "#32CD32"  # 已归位: 柠檬绿
 COLOR_TEXT = "#000000"  # 文字: 黑色
 
 
-class Visualizer:
+class SortingVisualizer:
     def __init__(self, root):
         self.root = root
         self.root.title("Python Algorithm Visualization (Galles Style)")
@@ -138,7 +138,7 @@ class Visualizer:
 
     def precompute_frames(self):
         """
-        这是实现“后退”和流畅播放的关键。
+        这是实现"后退"和流畅播放的关键。
         我们在后台对数据副本运行算法，记录每一步的状态。
         """
         algo_name = self.algo_combobox.get()
@@ -449,9 +449,3 @@ class Visualizer:
                 merge(l, m, r)
 
         merge_sort_recursive(0, n - 1)
-
-
-if __name__ == "__main__":
-    root = tk.Tk()
-    app = Visualizer(root)
-    root.mainloop()

@@ -5,6 +5,7 @@ import BFS1
 import DFS
 import Sorting_pro
 
+
 class AlgorithmVisualizationSuite:
     def __init__(self, root):
         self.root = root
@@ -113,7 +114,7 @@ class AlgorithmVisualizationSuite:
                                  self.open_dfs, 1, '#2ecc71')  # 绿色
         
         self.create_algorithm_card(algo_frame, "📊 排序算法可视化", 
-                                 "三种比较排序算法\n\n实现者：蓝冰云\n班级：生信C2301", 
+                                 "三种比较排序算法\n\n实现者：蓝冰云\n优化：全体\n班级：生信C2301", 
                                  self.open_sorting, 2, '#e74c3c')  # 红色
         
         # 状态栏（深色背景）
