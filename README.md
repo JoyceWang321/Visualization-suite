@@ -96,23 +96,16 @@ python main.py
 
 ### 4. 项目结构
 
-
+```bash
 Visualization-suite/
-
 ├── main.py                 # 应用程序主入口
-
 ├── BFS1.py                 # BFS算法可视化模块
-
 ├── DFS.py                  # DFS算法可视化模块
-
 ├── Sorting_pro.py          # 排序算法可视化模块
-
 ├── requirements.txt        # 项目依赖配置
-
 ├── README.md               # 项目说明文档
-
 └── .gitignore              # 版本控制忽略配置
-
+```
 
 ## 五、开发团队
 
