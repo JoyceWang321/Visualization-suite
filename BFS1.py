@@ -133,8 +133,8 @@ Colors:
         explanation_label.grid(row=4, column=0, columnspan=3, pady=(10, 0), sticky=tk.W)
 
         # 配置列权重
-        algo_control_frame.columnconfigure(1, weight=1)
-        control_frame.columnconfigure(1, weight=1)
+        #algo_control_frame.columnconfigure(1, weight=1)
+        #control_frame.columnconfigure(1, weight=1)
 
     def generate_graph(self):
         """生成随机图"""
@@ -207,10 +207,10 @@ Colors:
             self.ax.add_line(line)
 
             # 添加边的权重（随机）
-            mid_x, mid_y = (x1 + x2) / 2, (y1 + y2) / 2
-            self.ax.text(mid_x, mid_y, str(random.randint(1, 10)),
-                         fontsize=10, ha='center', va='center',
-                         bbox=dict(boxstyle='round,pad=0.3', facecolor='white', alpha=0.7))
+            #mid_x, mid_y = (x1 + x2) / 2, (y1 + y2) / 2
+            #self.ax.text(mid_x, mid_y, str(random.randint(1, 10)),
+                        # fontsize=10, ha='center', va='center',
+                        # bbox=dict(boxstyle='round,pad=0.3', facecolor='white', alpha=0.7))
 
         # 绘制节点
         for node, (x, y) in self.nodes.items():
